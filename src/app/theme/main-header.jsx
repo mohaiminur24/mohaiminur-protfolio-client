@@ -40,7 +40,7 @@ const MainHeader = () => {
   }, [isOpenLanguage]);
 
   return (
-    <div className="navbar px-5 md:px-16 border-b border-opacity-5 shadow-sm mb-3">
+    <div className="navbar px-5 md:px-16 border-b border-opacity-5 shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
