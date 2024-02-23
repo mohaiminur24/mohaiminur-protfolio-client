@@ -66,7 +66,7 @@ const MainHeader = () => {
             {MainMenu}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">MohaiMinur</a>
+        <a className="text-xl cursor-default font-semibold">MohaiMinur</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{MainMenu}</ul>
