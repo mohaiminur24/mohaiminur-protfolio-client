@@ -1,9 +1,11 @@
-import Image from "next/image";
+import MainHeader from "./theme/main-header";
 
 export default function Home() {
   return (
+    <>
+    <MainHeader/>
     <div>
-      <h1>Mohaiminur</h1>
-    </div>
+      <h1>home content</h1>
+    </div></>
   );
 }
