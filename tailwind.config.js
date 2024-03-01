@@ -12,6 +12,16 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily:{
+        robato:["var(--font-robato)"],
+        pacifico:["var(--font-pacifico)"],
+        bellefair:["var(--font-Bellefair)"],
+        kalam:["var(--font-kalam)"]
+      },
+      colors:{
+        primary:"#9a3412",
+        secondary:'#64748b'
+      }
     },
   },
   plugins: [require("daisyui")],

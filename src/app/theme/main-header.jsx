@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const MainHeader = () => {
@@ -7,22 +8,53 @@ const MainHeader = () => {
   const MainMenu = (
     <>
       <li>
-        <a>Home</a>
+        <Link
+          className="font-robato text-sm hover:animate-pulse hover:text-primary"
+          href="/"
+        >
+          Home
+        </Link>
       </li>
       <li>
-        <a>Blog</a>
+        <Link
+          className="font-robato text-sm hover:animate-pulse hover:text-primary"
+          href="/"
+        >
+          Blog
+        </Link>
       </li>
       <li>
-        <a>Portfolio</a>
+        <Link
+          className="font-robato text-sm hover:animate-pulse hover:text-primary"
+          href="/"
+        >
+          Portfolio
+        </Link>
       </li>
       <li>
-        <a>Services</a>
+        <Link
+          className="font-robato text-sm hover:animate-pulse hover:text-primary"
+          href="/"
+        >
+          Services
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          className="font-robato text-sm hover:animate-pulse hover:text-primary"
+          href="/"
+        >
+          DevTubeHub
+        </Link>
       </li>
       <li>
-        <a>DevTubeHub</a>
-      </li>
-      <li>
-        <a>About me</a>
+        <Link
+          className="font-robato text-sm hover:animate-pulse hover:text-primary"
+          href="/"
+        >
+          About me
+        </Link>
       </li>
     </>
   );
@@ -40,7 +72,7 @@ const MainHeader = () => {
   }, [isOpenLanguage]);
 
   return (
-    <div className="navbar px-5 md:px-16 border-b border-opacity-5 shadow-sm">
+    <div className="navbar px-5 md:px-16 bg-slate-50 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -66,10 +98,15 @@ const MainHeader = () => {
             {MainMenu}
           </ul>
         </div>
-        <a className="text-xl cursor-default font-semibold">MohaiMinur</a>
+        <Link
+          className="text-2xl cursor-default font-kalam font-extrabold"
+          href="/"
+        >
+          Mohai<span className="text-primary">Minur</span>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{MainMenu}</ul>
+        <ul className="gap-5 flex px-1">{MainMenu}</ul>
       </div>
       <div className="navbar-end">
         {/* language section  */}
@@ -78,21 +115,38 @@ const MainHeader = () => {
             className="cursor-default flex flex-row items-center gap-1"
             onClick={() => setOpenLanguage(!isOpenLanguage)}
           >
-            <span className="font-mono text-sm">English</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-4 h-4"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              />
-            </svg>
+            <span className="font-robato text-sm">English</span>
+            {isOpenLanguage ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-3 h-3"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-3 h-3"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            )}
           </div>
           <div
             hidden={!isOpenLanguage}

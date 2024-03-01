@@ -7,14 +7,18 @@ export default function Home() {
   return (
     <>
       <MainHeader />
-      <MainSlider/>
+      <MainSlider />
       <DefaultPageWrapper>
-      <div>
-        
-        <h1>home content</h1>
-      </div>
+        <div>
+          <h1 className="font-bellefair">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            quibusdam porro ipsa, voluptate beatae dolor laborum. Iste libero
+            reprehenderit, accusantium eligendi veniam debitis, blanditiis
+            quisquam ratione, eum temporibus adipisci dolorem?
+          </h1>
+        </div>
       </DefaultPageWrapper>
-      <MainFooter/>
+      <MainFooter />
     </>
   );
 }
