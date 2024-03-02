@@ -6,9 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 const MainSlider = () => {
   return (
-    <div className="w-full min-h-[400px] grid grid-cols-1 md:grid-cols-2 px-20 justify-center items-center bg-slate-50">
+    <div className="w-full min-h-[400px] h-[calc(100vh)] grid grid-cols-1 md:grid-cols-2 px-20 justify-center items-center bg-slate-50">
       <div className="order-2 md:order-1">
-        <div className="flex flex-row gap-2 py-2 px-3 w-fit rounded-3xl justify-center items-center mb-3 shadow-red-300 shadow-sm border">
+        <div className="flex flex-row gap-2 py-2 px-3 w-fit rounded-3xl justify-center items-center mb-3 shadow-red-300 shadow-sm border animate-bounce">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const MainSlider = () => {
         <h1 className="text-5xl font-robato font-bold">
           Here i'am <span className="text-primary">Mohaiminur</span>
         </h1>
-        <h2 className={`mt-5 text-xs font-kalam`}>
+        <h2 className={`mt-5 text-xs font-robato text-secondary`}>
           In the realm of software engineering, my commitment to your
           satisfaction is mirrored by an unwavering dedication to producing work
           that exemplifies the zenith of quality. Each project is approached

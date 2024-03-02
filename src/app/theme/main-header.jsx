@@ -58,12 +58,10 @@ const MainHeader = () => {
       </li>
     </>
   );
-
   // handle language change
   const handleLanguageChange = () => {
     setOpenLanguage(false);
   };
-
   useEffect(() => {
     if (!isOpenLanguage) return;
     setTimeout(() => {
@@ -72,7 +70,7 @@ const MainHeader = () => {
   }, [isOpenLanguage]);
 
   return (
-    <div className="navbar px-5 md:px-16 bg-slate-50 ">
+    <div className="navbar px-5 md:px-16 bg-slate-50 absolute top-0 left-0 right-0">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

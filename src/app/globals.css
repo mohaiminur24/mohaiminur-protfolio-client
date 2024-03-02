@@ -9,4 +9,13 @@
   .secondaryButton {
     @apply border border-secondary text-secondary font-robato text-sm flex px-5 py-2 rounded-sm font-semibold shadow-md gap-2 hover:scale-105;
   }
+  .titleText{
+    @apply font-robato font-bold text-2xl
+  }
+  .subtitleText{
+    @apply text-xs font-robato text-gray-500
+  }
+  .titleTexTwo{
+    @apply font-robato font-semibold text-base text-gray-600
+  }
 }
