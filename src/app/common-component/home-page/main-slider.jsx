@@ -1,8 +1,5 @@
-import { Inter } from "next/font/google";
 import Image from "next/image";
 import React from "react";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const MainSlider = () => {
   return (
@@ -25,7 +22,7 @@ const MainSlider = () => {
               />
             </svg>
           </span>
-          <div className={inter.className}>
+          <div>
             <h3 className="text-sm text-primary font-bellefair">
               Looking for a Developer
             </h3>
